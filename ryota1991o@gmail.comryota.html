@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奥綾太のページ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@5.0.2/dist/ress.min.css">
+    <link rel="stylesheet" href="css/temp.css">
+    <link rel="stylesheet" href="css/user.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- ---------ローディングアニメーション ココから--------- -->
+    <div id="splash">
+        <div id="splash_logo"><img src="images/loading_b.png" alt="" class="fadeUp" oncontextmenu="return false;"
+                onselectstart="return false;" onmousedown="return false;"></div>
+    </div>
+    <!-- ---------ローディングアニメーション ココまで--------- -->
+
+
+
+    <!-- ---------ハンバーガーメニュー ココから--------- -->
+    <div id="container">
+    </div>
+    <div class="openbtn1"><span></span><span></span><span></span></div>
+
+    <nav id="g-nav">
+        <div id="g-nav-list">
+            <ul>
+                <li><a href="index.html" class="home">ホーム</a>
+                    <a href="index.html#menu" class="menu">メニュー</a>
+                    <a href="index.html#guide" class="guide">ご利用ガイド</a>
+                </li>
+                <li><a href="index.html#q_a" class="q_a">よくある質問</a>
+                    <a href="inquiry.html" class="contact">お問い合わせ</a>
+                    <a href="login.html" class="login">会員登録・ログイン</a>
+                </li>
+                <!-- 動くアイコン「flaticon」より。
+https://www.flaticon.com/free-animated-icons/blueprint
+https://www.flaticon.com/free-animated-icons/diagram
+https://www.flaticon.com/free-animated-icon/note_6172546
+https://www.flaticon.com/free-animated-icon/home_8121334
+https://www.flaticon.com/free-animated-icon/id_6172522
+ -->
+            </ul>
+        </div>
+    </nav>
+    <!-- ---------ハンバーガーメニュー ココまで--------- -->
+
+
+
+    <!-- ---------ヘッダー ココから--------- -->
+    <header class="header">
+        <h1 class="logo"><a href="index.html"><img src="images/header_logo.png" alt="ZONE"></a></h1>
+        <div class="uni">
+            <a href="index.html">Home<br>ホーム</a>
+            <a href="index.html#menu">Menu<br>メニュー</a>
+            <a href="index.html#guide">Guide<br>ご利用ガイド</a>
+            <a href="index.html#q_a">Q&A<br>よくある質問</a>
+        </div>
+        <a class="tel" a href="tel:0611921991"><span><img src="images/icon/tel.png" alt="tel"></span></a>
+    </header>
+    <!-- ---------ヘッダー ココまで--------- -->
+    <h1 class="youkoso">ようこそ、奥 綾太さん</h1>
+    <div class="main">
+        <img src="images/プラン.png" alt="" width="30%" oncontextmenu="return false;">
+        <img src="images/予約.png" alt="" width="30%" oncontextmenu="return false;">
+        <img src="images/履歴.png" alt="" width="30%" oncontextmenu="return false;">
+        <img src="images/会員.png" alt="" width="30%" oncontextmenu="return false;">
+        <img src="images/退会.png" alt="" width="30%" oncontextmenu="return false;">
+    </div>
+
+    <!-- ハンバーガーメニューを動かすためのjQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- ローディングアニメーションを動かすためのjQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXv
+        ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // ハンバーガーメニューココから
+        $(".openbtn1").click(function () { //ボタンがクリックされたら
+            $(this).toggleClass('active'); //ボタン自身にactiveクラスを付与し
+            $(".uni").toggleClass('col');
+            $("#g-nav").toggleClass('panelactive'); //ナビゲーションにpanelactiveクラスを付与
+        });
+
+        $("#g-nav a").click(function () { //ナビゲーションのリンクがクリックされたら
+            $(".openbtn1").removeClass('active'); //ボタンのactiveクラスを除去し
+            $("#g-nav").removeClass('panelactive'); //ナビゲーションのpanelactiveクラスも除去
+        });
+
+
+
+        // ローディングアニメーションココから
+        $(window).on('load', function () {
+            $("#splash").delay(1500).fadeOut('slow'); //ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+            $("#splash_logo").delay(1200).fadeOut('slow'); //ロゴを1.2秒（1200ms）待機してからフェードアウト
+        });
+    </script>
+</body>
+
+</html>

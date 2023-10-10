@@ -1,0 +1,418 @@
+.login::after {
+    content: "イマココ";
+    position: absolute;
+    display: inline-block;
+    font-size: .8rem;
+    padding: 2px;
+    transform: rotate(10deg);
+    color: #fff;
+    background-color: #54d0d2;
+    font-family: 'Courier New', Courier, monospace;
+    top: 274px;
+    transition: .5s
+}
+
+.login:hover:after {
+    padding: 4px;
+    transition: .5s;
+    top: 265px
+}
+
+.mainVisual {
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    top: -100px;
+    right: 0;
+    left: 0;
+    overflow: hidden
+}
+
+.mainVisual img {
+    position: relative;
+    top: 100px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%
+}
+
+.mainVisual .maintext {
+    position: absolute;
+    top: 420px;
+    left: 220px;
+    font-size: 1.8rem;
+    color: #fff
+}
+
+.mainVisual h2 {
+    font-size: 6rem;
+    font-weight: 700
+}
+
+.maintext p {
+    margin-top: -20px;
+    margin-left: 10px
+}
+
+.main {
+    margin-top: 80vh;
+    text-align: center
+}
+
+.main p {
+    margin-bottom: 3rem
+}
+
+.log {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    margin-top: 3rem;
+}
+
+.log span {
+    position: relative
+}
+
+.log span::after {
+    content: '';
+    position: absolute;
+    left: -40%;
+    bottom: -60%;
+    width: 180%;
+    height: 2px;
+    background-color: #333
+}
+
+label,
+th {
+    text-align: left
+}
+
+input {
+    border: #333 1px solid;
+    border-radius: 3px
+}
+
+input:focus {
+    border: #54d0d2 2px solid
+}
+
+.error {
+    display: none
+}
+
+input:invalid+.error {
+    font-size: .9em;
+    display: block;
+    color: red
+}
+
+textarea {
+    border: #333 1px solid;
+    border-radius: 3px
+}
+
+textarea:focus {
+    border: #54d0d2 2px solid
+}
+
+.box_con {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.box_con form {
+    width: 100%
+}
+
+.box_con form table {
+    width: 100%
+}
+
+.box_con form table tr {
+    position: relative
+}
+
+.box_con form table tr:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    border-bottom: dotted #cdcdcd 1px
+}
+
+.box_con form table tr th {
+    width: 30%;
+    font-weight: 400;
+    padding: 1em .5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.box_con form table tr th span {
+    background: #54d0d2;
+    padding: .2em .3em;
+    color: #fff;
+    margin-left: .5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.box_con form table tr td {
+    padding: 1em .5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.box_con form table tr .box_br {
+    display: block
+}
+
+.box_con form table tr select {
+    border: 1px solid #54d0d2
+}
+
+.box_con form table tr label input {
+    cursor: pointer;
+    display: none;
+    vertical-align: middle
+}
+
+.box_con form table tr .radio02-input+label {
+    padding-left: 23px;
+    margin-right: 20px;
+    position: relative
+}
+
+.box_con form table tr .radio02-input+label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.box_con form table tr .radio02-input:checked+label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background: #54d0d2;
+    border-radius: 50%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.box_con form table tr input,
+.box_con form table tr select,
+.box_con form table tr textarea {
+    width: 100%;
+    height: 3em;
+    padding: .5em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.box_con form table tr textarea {
+    height: 10em
+}
+
+input[type=radio] {
+    display: none
+}
+
+.box_check {
+    text-align: center;
+    margin: 1em auto
+}
+
+.box_check label {
+    display: inline-block
+}
+
+.box_check label span {
+    margin-left: .3em
+}
+
+.btn {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.btn input {
+    display: inline-block;
+    background: #eee;
+    padding: .5em 4em;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s
+}
+
+.btn input:hover {
+    opacity: .7
+}
+
+.loginBtn {
+    min-width: 260px;
+    height: 80px;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 20px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #54d0d2;
+    background: #54d0d2;
+    text-decoration: none;
+}
+
+.loginBtn:hover {
+    background: #fff;
+    color: #54d0d2
+}
+
+.kbox {
+    margin: 0 auto;
+    display: flex;
+}
+
+.kiyaku {
+    justify-content: center;
+    min-width: 130px;
+    height: 40px;
+    margin: 1% auto;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    background-color: #ef233c;
+    justify-content: center;
+}
+
+.kiyaku:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left: 8px;
+}
+
+.kiyaku:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+
+.kiyaku:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+
+.modalArea {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    /*サイトによってここの数値は調整 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.9);
+}
+
+.modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 500px;
+    padding: 10px 30px;
+    background-color: #fff;
+}
+
+.closeModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.modalContents h1 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.modalArea form div {
+    margin: 1rem auto;
+}
+
+.modalArea form div input {
+    display: block;
+    margin: 0 auto;
+}
+
+.modalArea button {
+    text-align: center;
+    display: block;
+    background: #eee;
+    padding: .5em 4em;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    margin: 0 auto;
+}
+
+.modalArea button :hover {
+    opacity: .7
+}
